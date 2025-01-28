@@ -1,22 +1,22 @@
 # 지하철 도착 서비스 웹사이트 - 청룡 열차 
 
-
 ## 🖥️ 프로젝트 소개
 저의 개인프로젝트로 서울시에서 제공하는 공공 API를 이용하여 특정 지하철 역에 도착하는 열차들의 정보를 제공하며
 사용자들이 쉽게 도착하는 열차의 정보를 얻는 것을 목적으로 제작하였습니다.
 
 
 ## 🕰️ 개발 기간
-24.11.07 - 진행 중인 프로젝트 입니다.
+24.11.07 2025.01.29 - 1차 개발 완료 및 배포 
+(추후 피드백을 토대로 개선 할 예정 입니다) 
+
+## 📍배포주소
+https://seongwonlillyyun.github.io/cheongryongtrain
 
 ## ⚙️ 개발 환경
-1. Javascript (React) - typescript
-2. <img src="https://img.shields.io/badge/JAVA-007396?
-          style=flat&logo=Java&logoColor=white"/>
-3. 상태 관리 라이브러리 => zustand 
-4. Node.js (Express)
-5. MySQL
-6. GIT & Github
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white"> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
+<img src="https://img.shields.io/badge/GIT-05032?style=for-the-badge&logo=git&logoColor=white">
+<img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=github&logoColor=white">
+
    
 ## 📌 주요 기능
 - 모바일 최적화 웹
