@@ -26,7 +26,9 @@ function App() {
 			{path : '/', element :<Main/>},
 			{path : '/result', element :<Result/>},
 		]
-	}]);
+	}],
+	{	basename: "/cheongryongtrain"}
+);
 
   return (
     <RouterProvider router={router}/>
