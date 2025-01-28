@@ -5,9 +5,10 @@
     font-size: 40px;
     margin-bottom: 50px;
 }
-/* .result_header{
-    border: 1px solid red;
-} */
+.main img{
+    width: 80%;
+    margin: 0 auto;
+}
 .result_title_text,.result_title_text_mobile{
     font-size: 45px;
 }
@@ -103,28 +104,23 @@
 }
 
 
-
-
 @media (min-width:768px) and (max-width:1024px){
-#main{
+#main #Result{
     max-width: 100%;
-    padding: 60px 100px;
+    padding: 50px 50px;
     }
 .main_text{
-        margin-top: 60px;
+        margin-top: 80px;
         font-size: 30px;
     }
-  img{
-    width: 400px;
-  }
   .subway_result{
-    width: 700px;
+    width:100%;
   }
   .information{
     width: 500px;
   }
-  #Result{
-    padding: 50px 50px;
+.result_header{
+    position: relative;
 }
 .result_header_title{
     display: flex;
@@ -135,28 +131,40 @@
 }
 .result_title_text{
     margin-top: 50px;
-    font-size: 23px;
+    font-size: 20px;
 }
 .refreshbtn{
     font-size: 40px;
     margin-top: 50px;
 }
 .subwayarrive{
-    font-size: 26px;
+    font-size: 20px;
 }
 .subwayline{
-    font-size: 26px;
+    font-size: 24px;
+}
+.resultbtn{
+    width: 170px;
+    height: 40px;
+    border: 3px solid #8D99AE;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-left: 40px;
+}
+.filter{
+    margin-left: 40px;
+}
+.result_time{
+    position: absolute;
+    right: 50px;
+    top: 105px;
 }
 }
 @media (max-width:767px){
     .main_text{
-        margin-top: 80px;
-        margin-bottom: 20px;
+        margin: 90px 40px 30px 40px;
         font-size: 17px;
     }
-  img{
-    width: 100%;
-  }
   .subway_result{
     width: 100%;
     height: 100px;
@@ -169,9 +177,12 @@
     padding: 10px 10px;
 }
 .result_header_title{
-    margin-top: 100px;
-    padding-left: 60px;
+    margin-top: 90px;
+    padding-left: 20px;
     margin-bottom: 20px;
+}
+.result_header{
+    position: relative;
 }
 .result_title_text{
     margin-top: 40px;
@@ -183,8 +194,18 @@
 .result_header_btnlist{
     margin-top: 20px;
 }
+.result_time p{
+    position: absolute;
+    right: 40px;
+    top:65px;
+    
+}
+.result_time p {
+    font-size: 15px;
+}
 .filter{
     width: 90%;
+    margin-left: 20px;
 }
 .filterblock{
     display: flex;
@@ -193,23 +214,22 @@
     font-size: 13px;
 }
 .resultbtn{
-    width: 100%;
     height: 40px;
-    font-size: 15px;
-    width: 150px;
+    font-size: 14px;
+    width: 120px;
+    margin: 0 0 0 20px;
 }
 .subwayarrive{
     display: none;
     font-size: 15px;
 }
 
-
 .result_title_text{
     display: none;
 }
 .result_title_text_mobile{
     display: block;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .resultlist{
@@ -222,10 +242,10 @@
 }
 .subwayemoji, .subwayinfo{
     position: absolute;
-    width: 100%;
+    width: 50%;
     height: 40px;
     top: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
     
 }
 .subwayinfo{

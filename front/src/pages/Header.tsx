@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import '../css/header.css'
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css'
@@ -9,6 +9,7 @@ import { faTrainSubway, faMagnifyingGlass} from '@fortawesome/free-solid-svg-ico
 import { useNavigate } from 'react-router-dom';
 import { useStationStore } from '../stores/StationStore';
 import { useTimeStore } from '../stores/TimeStore'; 
+
 
 
 config.autoAddCss = false
@@ -55,21 +56,21 @@ const Header = () => {
     setStname('')
     clearUserStation()
   }
+  
 
 return(
     <>
       <div id='header' className='header'>
         <ul className='header_title'>
           <li>
-            <ul style={{'display':'flex','gap':'20px', 'justifyContent':'Center', 'alignItems':'center'}}>
+            <ul className='title'>
               <li><FontAwesomeIcon className='trainemoji' icon={faTrainSubway} 
                     onClick={goingHome}/></li>
               <li><h1 className='header_title_text'>청 룡 열 차</h1></li>
             </ul>
           </li>
-          <li>
-            <ul className='header_function'>
-              <li className='formobile'>
+          <li className='mobile'>
+            <div className='header_function'>
                 <div className='header_search_part'>
                   <input className='header_search' type="text" placeholder='지하철역을 검색해주세요'
                           onChange={handleChange} ref={searchRef} onKeyDown={handleKeyDown} 
@@ -79,12 +80,11 @@ return(
                       onClick={handleStation}/>
                     </button>
                 </div>
-              </li>
-            </ul>
-          </li>
+              </div>
+            </li>
         </ul>
       </div>
     </>
   );
 }
-export default Header;
+export default Header

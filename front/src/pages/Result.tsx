@@ -157,8 +157,8 @@ return(
                 <li>
                     <ul className='result_header_title'>
                         <li>
-                            <h2 className='result_title_text'>{stname}역으로 청룡열차들이 들어오고 있습니다 · · ·</h2>
-                            <h2 className='result_title_text_mobile'>{stname}역 청룡열차</h2>
+                            <h2 className='result_title_text'>{stname}역으로 열차 오는 중!</h2>
+                            <h2 className='result_title_text_mobile'>{stname}역으로 오는 중!</h2>
                         </li>
                         <li>
                             <button onClick={refresh}>
