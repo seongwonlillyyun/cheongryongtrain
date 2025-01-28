@@ -7,7 +7,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
-import { faArrowsRotate, faHeart, faFilter, faTrainSubway } from '@fortawesome/free-solid-svg-icons';
+import { faArrowsRotate, faFilter} from '@fortawesome/free-solid-svg-icons';
 import { Subway } from '../components/Subway';
 import { useStationStore } from '../stores/StationStore';
 import { useTimeStore } from '../stores/TimeStore';

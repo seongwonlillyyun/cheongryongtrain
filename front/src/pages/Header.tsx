@@ -4,8 +4,8 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faBullhorn, fas } from '@fortawesome/free-solid-svg-icons'
-import { faTrainSubway, faMagnifyingGlass, faUser, faCircleQuestion, faBars} from '@fortawesome/free-solid-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { faTrainSubway, faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 import { useStationStore } from '../stores/StationStore';
 import { useTimeStore } from '../stores/TimeStore'; 
@@ -79,11 +79,6 @@ return(
                       onClick={handleStation}/>
                     </button>
                 </div>
-              </li>
-              <li className='headerbtn'>
-                <button className='noticebtn' onClick={()=>navigator('/notice')}>
-                  <FontAwesomeIcon icon={faBullhorn} />
-                </button>
               </li>
             </ul>
           </li>
