@@ -1,0 +1,167 @@
+#Signup {
+    border: 1px solid red;
+    padding: 20px 50px;
+}
+.signup_header_text{
+    font-size: 40px;
+    text-align: center;
+}
+.singup_header_step{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 30px 0;
+}
+.unactive{
+    width: 50px;
+    height: 50px;
+    background-color: #d9d9d9;
+    border-radius: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.steptext{
+    text-align: center;
+}
+.active{
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        text-align: center;
+        padding: 10px 0;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        background-color: #ef233c;
+        color: white;
+}
+.agreepart, .memberinfo{
+    /* border: 1px solid red; */
+    padding: 0 50px;
+}
+.agreepartheader_text, .memeberinfo_header_text{
+    font-size: 30px;
+}
+.agreepartcontent{
+    border: 2px solid #8d99ae;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin: 30px 0;
+    width: 500px;
+}
+.agreelist{
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.allagree input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.allagree p{
+    font-size: 25px;
+    font-weight: 600;
+}
+.agreeli{
+    margin: 10px 0;
+}
+.eachagree{
+    width: 100%;
+    position: relative;
+    /* border: 1px solid red; */
+}
+.eachagree input[type='checkbox']{
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+.eachagree p{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.eachagree p span{
+    color: #d90429;
+}
+.eachagree button{
+    font-size: 20px;
+    position:absolute;
+    right: 0;
+}
+.unactivearea{
+    width: 100%;
+    height: 6.25em;
+    border: 1px solid black;
+    resize: none;
+    transition: all 2s;
+    overflow: hidden;
+    display: none;
+    transform: translateY(-30px);
+}
+.activearea{
+    display: block;
+    width: 100%;
+    height: 6.25em;
+    border: 1px solid black;
+    resize: none;
+    transform: translateY(0px);
+    transition: all 2s;
+    display: block;
+    margin: 10px 0;
+}
+
+.memberinfo{
+    /* border: 1px solid red; */
+    margin-top: 100px;
+}
+.memberinfo_content{
+    /* border: 2px solid #8d99ae; */
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin: 30px 0;
+    width: 100%;
+}
+.memberinfo_list{
+    /* border: 1px solid red; */
+    display: flex;
+    position: relative;
+    padding: 30px 20px;
+    align-items: center;
+
+}
+.memberinfo_title{
+    font-size: 17px;
+    font-weight: 600;
+}
+.memberinfo_name,.memberinfo_id, .memberinfo_pw,.memberinfo_repw,
+.memberinfo_nickname, .memberinfo_email, .memberinfo_bday
+{
+    position: absolute;
+    left: 150px;
+}
+.memberinfo_name, .memberinfo_id input, .memberinfo_pw, .memberinfo_repw,
+.memberinfo_nickname input, .memberinfo_bday{
+    width: 300px;
+    height: 40px;
+}
+.memberinfo_email input , .memberinfo_email select{
+    width: 180px;
+    height: 40px;
+}
+.memberinfo_id button, .memberinfo_nickname button{
+    background-color: #ef233c;
+    width: 100px;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 10px;
+}

@@ -1,0 +1,276 @@
+/* 관리자 페이지 로그인 */
+/* .adminlogin_header{
+    border: 1px solid red;
+} */
+.adminlogin_title, .adminsignup_title, .adminpage_title, .settingpwtitle, .notice_write_title{
+    display: inline-block;
+    /* border: 1px solid blue; */
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.login_box, .pw_box{
+    border: 3px solid #2b2d42;
+    border-radius: 10px;
+    background-color: #edf2f4;
+    width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 40px 0;
+}
+.login_list input, .pw_list input{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: #edf2f4;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.login_btn, .changebtn{
+    background-color: #ef233c;
+    color: white;
+    padding: 10px 0;
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* 관리자 계정 등록 페이지  */
+.adminsignup_content{
+    border: 3px solid #2b2d42;
+    border-radius: 10px;
+    background-color: #edf2f4;
+    width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 40px 0;
+}
+.adminsignup_list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.adminsignup_list input{
+    width: 200px;
+}
+.adminsignup_list p{
+    width: 100px;
+    /* border: 1px solid red; */
+    font-size: 20px;
+}
+.adminsignup_btn{
+    background-color: #ef233c;
+    color: white;
+    padding: 10px 0;
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+}
+
+/* 관리자 페이지 */
+.adminpage_infolist{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+}
+.logout_btn{
+    width: 100px;
+    background-color: #ef233c;
+    font-size: 15px;
+    padding: 8px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.adminpage_info{
+    /* border: 1px solid red; */
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+.adminpage_content{
+   /*  border: 1px solid red; */
+    margin-top: 20px;
+    margin-left: 120px;
+    font-size: 20px;
+}
+.adminpage_content li:not(:last-of-type){
+    margin-bottom: 20px;
+}
+.wrongpage{
+    text-align: center;
+}
+.wrongpageimg{
+    margin: 50px auto;
+}
+.wrongpagebtn{
+    width: 200px;
+    background-color: #ef233c;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 600;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+   
+}
+
+/* 뒤로가기 버튼 */
+.backbtn_admin{
+    width: 200px;
+    background-color: #8d99ae;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 600;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+   
+}
+
+/* 공지사항 쓰기  */
+/* .notice_write{
+    border: 1px solid red;
+} */
+.notice_box_title{
+    width: 1490px;
+    height: 40px;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border:1px solid lightgray
+}
+.noticebtnlist{
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.notice_write_submit{
+    background-color: #ef233c;
+    color: white;
+    padding: 10px 0;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.notice_write_cancle{
+    background-color: #8d99ae;
+    color: white;
+    padding: 10px 0;
+    width: 150px;
+    border-radius: 10px;
+}
+
+/* 반응형 웹 */
+@media (min-width:768px) and (max-width:1024px){
+    .adminlogin_header, .adminsignup_header{
+        margin-top: 120px;
+        text-align: center;
+    }
+    .adminlogin_title, .adminsignup_title, .settingpwtitle, .notice_write_title{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .adminlogin_title{
+        text-align: center;
+    }
+    .login_box, .pw_box{
+       margin: 20px auto;
+    }
+    .adminsignup_content{
+        margin: 20px auto;
+    }
+    .adminpage_header{
+        margin-top: 120px;
+        margin-bottom: 50px;
+    }
+    .settingpw_header, .notice_write_header{
+        margin-top: 120px;
+        text-align: center;
+    }
+    .notice_box_title{
+        width: 570px;
+    }
+}
+@media (max-width:767px){
+    .adminlogin_header, .adminsignup_header{
+        margin-top: 80px;
+        text-align: center;
+    }
+    .notice_header_title, .notice_header_login{
+        font-size: 20px;
+    }
+    .adminlogin_title, .adminsignup_title, .settingpwtitle, .notice_write_title{
+        font-size: 30px;
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    .login_box, .pw_box{
+        max-width: 90%;
+        margin: 30px auto;
+        text-align: center;
+        padding: 40px 0;
+    }
+    .adminsignup_content{
+        margin: 20px auto;
+        max-width: 90%;
+        padding: 30px 0;
+    }
+    .adminsignup_list{
+        margin-bottom: 10px;
+    }
+    .adminsignup_list p{
+        width: 100px;
+        font-size: 16px;
+    }
+    .adminpage_header{
+        margin-top: 80px;
+    }
+    .adminpage_title{
+        font-size: 30px;
+        margin-left: 40px;
+    }
+    .adminpage_infolist{
+        gap: 15px;
+        margin-top: 0px;
+    }
+    .adminpage_info{
+        margin-left: 40px;
+    }
+    .adminpage_infolist li p{
+        font-size: 16px;
+    }
+    .logout_btn{
+        width: 80px;
+        font-size: 13px;
+        padding: 4px;
+    }
+    .adminpage_content{
+         margin-left: 40px;
+         font-size: 18px;
+     }
+     .settingpw_header, .notice_write_header{
+        margin-top: 80px;
+        text-align: center;
+    }
+    .notice_write_content{
+        margin-top: 10px;
+        padding: 0 10px;
+    }
+    .notice_box_title{
+        max-width: 100%;
+        height: 40px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .quill{
+        margin: 0 !important;
+    }
+}

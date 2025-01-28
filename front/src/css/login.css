@@ -1,0 +1,74 @@
+#Login{
+    /* border: 1px solid red; */
+    padding: 20px 50px;
+}
+.login_title_text{
+    font-size: 40px;
+    margin: 20px 0;
+    text-align: center;
+}
+.loginbox{
+    border: 3px solid #8d99ae;
+    border-radius: 10px;
+    width: 600px;
+    padding: 50px 20px;
+    margin: 0 auto;
+}
+.loginbox_id{
+    margin-bottom: 10px;
+}
+.loginbox_id_write, .loginbox_pw_write{
+  /*   border: 1px solid red; */
+    display: flex;
+    width: 400px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+}
+.loginbox_id_write span, .loginbox_pw_write span{
+    font-size: 35px;
+ /*    border: 1px solid blue; */
+}
+.loginbox_id_write input, .loginbox_pw_write input{
+    width: 300px;
+    margin-left: 20px;
+    height: 50px;
+    background-color: #d9d9d9;
+    border: none;
+    outline: none;
+}
+.loginbtn_part{
+    text-align: center;
+    margin: 20px 0 0;
+}
+.loginbtn{
+    width: 400px;
+    background-color: #ef233c;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+.signupad{
+  /*   border: 1px solid red; */
+    text-align: center;
+    margin-top: 20px;
+}
+/* .signupad_header{
+    border: 1px solid blue;
+} */
+.signupad_header_text{
+    font-size: 18px;
+    font-weight: 600;
+}
+.signup_bottom{
+    margin-top: 10px;
+}
+.signup_bottom_list{
+  /*   border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
