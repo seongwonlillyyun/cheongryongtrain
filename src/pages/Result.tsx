@@ -149,6 +149,8 @@ const Result = () => {
         SetRebtn(true)
         setNowDate(new Date())
     }
+    console.log("API URL 확인:", url, infourl);
+
 
 return(
     <>
