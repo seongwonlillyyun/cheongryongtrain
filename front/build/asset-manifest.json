@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cheongryongtrain/static/css/main.979138e8.css",
+    "main.js": "/cheongryongtrain/static/js/main.50a82c46.js",
+    "static/js/453.c2b2afdb.chunk.js": "/cheongryongtrain/static/js/453.c2b2afdb.chunk.js",
+    "index.html": "/cheongryongtrain/index.html",
+    "main.979138e8.css.map": "/cheongryongtrain/static/css/main.979138e8.css.map",
+    "main.50a82c46.js.map": "/cheongryongtrain/static/js/main.50a82c46.js.map",
+    "453.c2b2afdb.chunk.js.map": "/cheongryongtrain/static/js/453.c2b2afdb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.979138e8.css",
+    "static/js/main.50a82c46.js"
+  ]
+}

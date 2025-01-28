@@ -27,6 +27,7 @@
     "timers": "^0.1.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4",
+    "xml2js": "^0.6.2",
     "zustand": "^5.0.1"
   },
   "scripts": {
@@ -56,6 +57,7 @@
     ]
   },
   "devDependencies": {
+    "@types/xml2js": "^0.4.14",
     "gh-pages": "^6.3.0"
   }
 }
