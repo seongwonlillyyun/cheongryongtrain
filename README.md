@@ -1,46 +1,36 @@
-# Getting Started with Create React App
+# 지하철 도착 서비스 웹사이트 - 청룡 열차 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🖥️ 프로젝트 소개
+저의 개인프로젝트로 서울시에서 제공하는 공공 API를 이용하여 특정 지하철 역에 도착하는 열차들의 정보를 제공하며
+사용자들이 쉽게 도착하는 열차의 정보를 얻는 것을 목적으로 제작하였습니다.
 
-## Available Scripts
 
-In the project directory, you can run:
+## 🕰️ 개발 기간
+24.11.07 2025.01.29 - 1차 개발 완료 및 배포 
+(추후 피드백을 토대로 개선 할 예정 입니다) 
 
-### `npm start`
+## 📍배포주소
+https://seongwonlillyyun.github.io/cheongryongtrain
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## ⚙️ 개발 환경
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white"> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
+<img src="https://img.shields.io/badge/GIT-05032?style=for-the-badge&logo=git&logoColor=white">
+<img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=github&logoColor=white">
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+   
+## 📌 주요 기능
+- 모바일 최적화 웹
+- 검색 결과 필터링 기능 (호선 별, 추후 상행/하행선 추가 예정) 
+- 관리자 페이지 구현 (공지사항 업로드 용)
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🚨 에러 및 해결 방법
+=> 자세한 내용은 저의 노션 페이지에서 확인 가능 합니다! 
+https://www.notion.so/seongwonlillyyun/Seongwon-Lilly-Yun-270c7a81531044bfbccb635df5911e18?p=14014cf87dd78034be62dc992c22af8b&pm=c
+1. 사용자가 입력 후 엔터 키로 검색 가능 하도록 (완료) 
+2. 헤더에서 저장된 검색 정보를 전역으로 관리 할 수 있도록 (zustand 이용하여 완료) 
+3. 새로고침 후에도 사용자가 선택한 역은 그대로 = > 도착 정보만 새로고침 되도록 (로컬스토리지에 저장하여 완료) 
+4. F5 누르면 검색 시간 뜨도록
+5. 필터링 (하행/상행 선택, 특정 호선만 보이도록)
+6. 검색 후 가끔 호선 색깔 반영 안되는 경우 해결하기
+7. 로딩 중 화면 구현하기
+8. 사용자의 아이피를 가져와서 관리자인지 아닌지 1차 구분하기 
