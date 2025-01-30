@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect} from 'react';
 import './App.css';
 import {createBrowserRouter,RouterProvider} from 'react-router-dom'
@@ -27,7 +28,7 @@ function App() {
 			{path : '/result', element :<Result/>},
 		]
 	}],
-	{	basename: "/cheongryongtrain"}
+	{basename: process.env.PUBLIC_URL || "/"}
 );
 
   return (

@@ -36,27 +36,42 @@ const Result = () => {
     else {
         infoname = stname
     }
-    let url:string = `http://swopenapi.seoul.go.kr/api/subway/67675459757973773536796a5a4569/xml/realtimeStationArrival/0/7/${stname}`
-    let infourl:string = `http://openAPI.seoul.go.kr:8088/584a4c534179737737386656667562/xml/SearchInfoBySubwayNameService/1/5/${infoname}/`
+
+    
      useEffect(()=>{
+    const socket = new WebSocket('ws://13.124.116.254:8080/ws');
+    socket.onopen = () => {
+    socket.send('Hello, server!');
+    };
+    socket.onmessage = event => {
+        console.log('서버로부터 메시지:', event.data);
+    };
+    socket.onerror = error => {
+    console.error('WebSocket Error: ', error);
+    };
+
       const fetchData = async()=>{
-        /* 지하철 정보 */
-        const res = await fetch(url);
-        const result = await res.text()
-        const data = await parseStringPromise(result)
-        /* 지하철역 정보 */
-        const infores = await fetch(infourl);
-        const inforesult = await infores.text()
-        const infodata = await parseStringPromise(inforesult)
-        return {data, infodata}; 
+        try {
+            const subwayres = await fetch(`http://13.124.116.254:8080/api/subway?stname=${stname}`)
+            const dataresult = await subwayres.text()
+            const data:any = await parseStringPromise(dataresult)
+            const stationres = await fetch(`http://13.124.116.254:8080/api/station?stname=${infoname}`)
+            const inforesult = await stationres.text()
+            const infodata:any = await parseStringPromise(inforesult)
+            return {data, infodata}
+        } catch (error) {
+            console.error('실패')
+        }
       }
+
       fetchData()
       .then(res=>{
-        const {data,infodata} = res
-         if(data?.realtimeStationArrival?.RESULT[0]?.code?.[0] === 'INFO-000' && infodata?.SearchInfoBySubwayNameService?.RESULT[0]?.CODE?.[0]=== 'INFO-000') {
+       if(res){
+        const {data,infodata} = res;
+         if(data.realtimeStationArrival?.RESULT[0]?.code?.[0] === 'INFO-000' && infodata.SearchInfoBySubwayNameService?.RESULT[0]?.CODE?.[0]=== 'INFO-000') {
             /* 1. 필터 돌려서 아이디를 호선으로 변경 */
             const lines = data.realtimeStationArrival.row;
-            const line = lines.filter((line:any)=>{
+            const updatedline = lines.map((line:any)=>{
                 switch (line.subwayId[0]) {
                     case '1001':
                         line.subwayId[0] = '1호선';
@@ -121,9 +136,11 @@ const Result = () => {
             }
             return line;
         })
+        
+        
             /* 2. 필터 유 이면 필터 */
             if(items.length !== 0){
-                const filteredLines = line.filter((line: any) => {
+                const filteredLines = updatedline.filter((line: any) => {
                    return items.includes(line.subwayId[0])
                   });
                   setInfo(filteredLines); 
@@ -133,7 +150,7 @@ const Result = () => {
         } 
             /* 3. 필터 무 이면 그냥 넣기 */
             else {
-            setInfo(lines); 
+            setInfo(updatedline); 
             SetRebtn(false); 
             setLineInfo(infodata.SearchInfoBySubwayNameService.row)
             setLoading(false)
@@ -142,15 +159,15 @@ const Result = () => {
             alert('해당하는 데이터가 없습니다.')
             Navigator('/')
             }  
+        }
+        
          })
       .catch(error=>console.log(error))
     },[stname, rebtn, result, items])
     const refresh = () =>{
         SetRebtn(true)
         setNowDate(new Date())
-    }
-    console.log("API URL 확인:", url, infourl);
-
+    };
 
 return(
     <>
