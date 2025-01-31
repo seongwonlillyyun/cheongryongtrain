@@ -6,11 +6,11 @@
 
 
 ## 🕰️ 개발 기간
-24.11.07 2025.01.29 - 1차 개발 완료 및 배포 
+24.11.07 2025.01.31 - 1차 개발 완료 및 배포 
 (추후 피드백을 토대로 개선 할 예정 입니다) 
 
 ## 📍배포주소
-https://seongwonlillyyun.github.io/cheongryongtrain
+http://cheongryongtrain.kro.kr/
 
 ## ⚙️ 개발 환경
 <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white"> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
