@@ -10,7 +10,7 @@
 (추후 피드백을 토대로 개선 할 예정 입니다) 
 
 ## 📍배포주소
-http://cheongryongtrain.kro.kr/
+2025년 4월 자로 배포 종료 
 
 ## ⚙️ 개발 환경
 <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white"> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
